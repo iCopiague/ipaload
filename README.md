@@ -1,95 +1,109 @@
-<a href="https://iloader.app">
-  <picture align="left" >
-    <source media="(prefers-color-scheme: dark)" srcset="/iloader.svg">
-    <img align="left" width="90" height="90" src="/iloader-dark.svg">
-  </picture>
-  
-  <div id="user-content-toc">
-    <ul style="list-style: none;">
-      <summary>
-        <h1>iloader</h1>
-      </summary>
-    </ul>
-  </div>
-</a>
+<p align="center">
+  <img width="76" height="76" src="./public/ipaload.svg" alt="Логотип ipaload">
+</p>
+
+<h1 align="center">ipaload</h1>
+
+<p align="center">Установка приложений на iPhone и iPad — просто и понятно.</p>
 
 ---
 
-[![Build iloader](https://img.shields.io/github/actions/workflow/status/nab138/iloader/build.yml?style=flat&logo=github&logoColor=white&label=Build%20iloader)](https://github.com/nab138/iloader/actions/workflows/build.yml) ![Downloads](https://img.shields.io/endpoint?url=https%3A%2F%2Fgist.githubusercontent.com%2Fnab138%2F28258aff7e3f1d3a3084a21f4cff2e57%2Fraw%2Filoader_downloads.json&style=flat)
-[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/nab138)
+## Скриншоты
 
-Install SideStore (or other apps) and import your pairing file with ease
+![Главный экран ipaload с формой Apple ID, приветственным баннером, устройствами и установщиками](./screenshots/ipaload-main.png)
 
-**This repository and [iloader.app](https://iloader.app) are the only official ways to download iloader. There is also an unofficial [Homebrew cask](https://formulae.brew.sh/cask/iloader), an unofficial [AUR package](https://aur.archlinux.org/packages/iloader-bin), and an unofficial [Fedora COPR repository](https://copr.fedorainfracloud.org/coprs/anudeepd/iloader) maintained by the community. Do not download from any other sources or websites.**
+На главном скриншоте показан первый запуск без подключённого устройства.
 
-<img width="1918" height="998" alt="iloader0" src="https://github.com/user-attachments/assets/93cd135d-6d89-46ee-9b9f-12c596806911" />
+### Анимированная инструкция
 
-## How to use
+| Шаг 1 — подключение устройства | Шаг 2 — вход с Apple ID |
+| --- | --- |
+| <img width="460" src="./screenshots/ipaload-guide-1.png" alt="Шаг 1: подключите iPhone или iPad и подтвердите доверие к компьютеру"> | <img width="460" src="./screenshots/ipaload-guide-2.png" alt="Шаг 2: войдите с Apple ID"> |
 
-- Install usbmuxd for your platform
-  - Windows: [iTunes](https://apple.co/ms)
-  - macOS: Included
-  - Linux: Potentially included, if not, install via your package manager
-- Install the latest version for your platform from the [releases](https://github.com/nab138/iloader/releases)
-  - NixOS: Use the flake `github:nab138/iloader`
-  - Fedora: Use the .RPM or the unofficial [Fedora COPR repository](https://copr.fedorainfracloud.org/coprs/anudeepd/iloader)
-  - Arch: Use the unofficial [AUR package](https://aur.archlinux.org/packages/iloader-bin),
-- Plug in your iDevice to your computer
-- Open the app
-- Sign into your Apple ID
-- Select your action (e.g. install SideStore)
+| Шаг 3 — выбор устройства | Шаг 4 — установка приложения |
+| --- | --- |
+| <img width="460" src="./screenshots/ipaload-guide-3.png" alt="Шаг 3: выберите подключённое устройство"> | <img width="460" src="./screenshots/ipaload-guide-4.png" alt="Шаг 4: выберите SideStore, LiveContainer или IPA-файл"> |
 
-## Features
+### Часто задаваемые вопросы
 
-- Install SideStore (or LiveContainer + SideStore), import certificate and place rppairing+lockdown pairing files automatically
-- Import any IPA
-- Intelligent error suggestions to help resolve common issues
-- Manage pairing files in apps like StikDebug, SideStore, Protokolle, etc
-- See and revoke development certificates & app ids
+![Интерактивный раздел часто задаваемых вопросов ipaload](./screenshots/ipaload-faq.png)
 
-## Troubleshooting
+## Возможности
 
-- If you are unable to solve an issue on your own, copy the full error message and ask on the [idevice Discord server](https://discord.gg/EA6yVgydBz) or [open an issue](https://github.com/nab138/iloader/issues).
-- You can view app logs with the "View Logs." If nothing is showing up, change the log level to "Debug."
-- If those logs aren't helpful, logs with additional are stored in the following locations:
-  - Windows: `%APPDATA%\me.nabdev.iloader\logs`
-  - macOS: `~/Library/Application Support/me.nabdev.iloader/logs`
-  - Linux: `~/.local/share/me.nabdev.iloader/logs/`
+- Обновлённый интерфейс ipaload в светлой зелёно-лаймовой цветовой гамме.
+- Установка SideStore (стабильная и предварительная сборки) и LiveContainer + SideStore.
+- Установка собственных IPA-файлов.
+- Подключение iPhone и iPad, импорт и управление файлами сопряжения.
+- Вход через Apple ID, управление сертификатами разработчика и App ID.
+- Встроенная анимированная инструкция, которую можно открыть повторно из верхней панели.
+- Часто задаваемые вопросы прямо на главном экране.
+- Русский язык включён по умолчанию; английский доступен в переключателе языка.
 
-## Translating
+## Быстрый старт
 
-iloader needs localization! If you speak another language and notice iloader does not support it or has mistakes, please consider contributing.
+1. Подключите iPhone или iPad кабелем, разблокируйте его и подтвердите запрос «Доверять этому компьютеру».
+2. На Windows установите [iTunes](https://apple.co/ms), необходимый для связи с устройством.
+3. Откройте ipaload и войдите в Apple ID. Для подписи приложений подойдёт бесплатный аккаунт.
+4. Выберите подключённое устройство в разделе «Устройства».
+5. Выберите SideStore или LiveContainer либо нажмите «Импорт IPA», чтобы установить собственный файл.
 
-To update/edit an existing language, make a PR modifying `src/locales/<lang>.json`.
+При первом запуске ipaload показывает пошаговую анимированную инструкцию. Её можно пройти кнопкой «Продолжить», вернуться на предыдущий шаг, закрыть или в любой момент открыть снова кнопкой «Краткая инструкция».
 
-To add a new language, add your language to `src/i18next.ts`, and in `src/locales` copy `en.json` to a new file titled `<langcode>.json` and update the strings.
+Настройки ipaload хранятся отдельно от оригинального iLoader. При первом запуске войдите в Apple ID повторно.
 
-**i18next.ts:**
+## Элементы интерфейса
 
-```ts
-const languages = [
-  ["en", "English"],
-  ["es", "Español"],
-  // Your language here...
-] as const;
+- **Аккаунт** — вход и выход из Apple ID, выбор сохранённого аккаунта.
+- **Устройства** — выбор подключённого устройства и обновление списка.
+- **Установщики** — установка SideStore, LiveContainer + SideStore или собственного IPA.
+- **Управление** — файлы сопряжения, сертификаты и идентификаторы приложений.
+- **Настройки** — язык и другие параметры приложения.
+- **TikTok и Telegram** — кнопки внизу окна ведут на страницы автора.
+
+## Сборка из исходного кода
+
+Требуются Node.js, Rust и, для Windows, iTunes. В корне проекта выполните:
+
+```powershell
+npm install
+npm run tauri dev
 ```
 
-You can also add your name to the translators section of the README.
+Собрать Windows-приложение:
 
-Thank you for translating!
+```powershell
+npm run tauri build -- --no-bundle
+```
 
-## Building from source
+Готовый исполняемый файл появится в `src-tauri/target/release/ipaload.exe`. Для production-установщика NSIS используйте `npm run tauri build -- --bundles nsis`.
 
-1. Install [bun](https://bun.sh) (or [Node.js](https://nodejs.org)) and [Rust](https://www.rust-lang.org/tools/install)
-2. Clone the repository and `cd` into it
-3. Run `bun i` (or `npm i`)
+## Решение проблем
 
-For development with hot reload: `bun tauri dev` (or `npm run tauri dev`)
-Make a production build: `bun tauri build` (or `npm run tauri build`)
+- Если устройство не отображается, проверьте кабель, разблокируйте iPhone, подтвердите доверие компьютеру и нажмите «Обновить устройства».
+- В Windows убедитесь, что установлен iTunes.
+- Для диагностики откройте «посмотреть логи» в настройках и при необходимости выберите уровень логирования Debug.
+- Ошибки подписи могут быть связаны с лимитом бесплатного Apple ID на сертификаты или App ID.
 
-## Credits
+## Социальные сети
 
-- Icon made by [Transistor](https://github.com/transistor-exe)
+- TikTok: [@xedazu](https://www.tiktok.com/@xedazu)
+- Telegram: [канал ipaload](https://t.me/+WkJo-baL_tkwMWY5)
+
+---
+
+ipaload — неофициальный форк [iLoader](https://github.com/nab138/iloader). Сведения об исходном проекте, авторах библиотек, переводчиках и лицензии приведены ниже.
+
+## Язык и переводы
+
+В интерфейсе доступны русский язык (по умолчанию) и английский. Переводы находятся в `src/locales/ru.json` и `src/locales/en.json`; все тексты русского интерфейса следует писать строчными буквами.
+
+Чтобы предложить правку перевода, измените соответствующий JSON-файл. Список доступных языков, загружаемые словари и резервный язык настроены в `src/i18next.ts`.
+
+Благодарим всех авторов переводов исходного проекта, перечисленных ниже.
+
+## Авторы исходных библиотек
+
+- Original iLoader icon made by [Transistor](https://github.com/transistor-exe); ipaload's download mark is a custom SVG.
 - UI improved by [StephenDev0](https://github.com/StephenDev0)
 - [idevice](https://github.com/jkcoxson/idevice) by [jkcoxson](https://github.com/jkcoxson) for communicating with iOS devices
 - [isideload](https://github.com/nab138/isideload) for installing apps
@@ -100,9 +114,9 @@ Make a production build: `bun tauri build` (or `npm run tauri build`)
 - [idevice_pair](https://github.com/jkcoxson/idevice_pair) was used as a reference for pairing file management
 - App made with [tauri](https://tauri.app)
 
-## Translators
+## Авторы переводов
 
-Thank you to everyone who has contributed translations! See the [Translating](#translating) section if you would like to contribute as well.
+Спасибо всем, кто помогает с переводами! Как предложить новый перевод — описано в разделе «Добавление переводов».
 
 - [By3lish](https://github.com/by3lish): Azerbaijani (az)
 - [TNT-333](https://github.com/TNT-333): German (de)
@@ -140,16 +154,16 @@ Thank you to everyone who has contributed translations! See the [Translating](#t
 
 Copyright (C) 2026 nab138
 
-The source code of this repository is licensed under the MIT License. See the [LICENSE](/LICENSE) file for the full text.
+The source code of this repository is licensed under the MIT License. See the [LICENSE](./LICENSE) file for the full text.
 
 Branding, logos, media assets, and the name “iloader” are not licensed under the MIT License and are subject to separate restrictions.
 
-You may retain or use branding materials in forks, tutorials, or documentation if you include a clear link to either the official site (https://iloader.app) or the iloader source code repository (https://github.com/nab138/iloader) and do not imply official endorsement. See [LICENSE-BRANDING](/LICENSE-BRANDING) for full details.
+You may retain or use branding materials in forks, tutorials, or documentation if you include a clear link to either the official site (https://iloader.app) or the iloader source code repository (https://github.com/nab138/iloader) and do not imply official endorsement. See [LICENSE-BRANDING](./LICENSE-BRANDING) for full details.
 
 ## Contributing
 
-Please read our [Contributing](/CONTRIBUTING.md) policy before making a contribution.
+Please read our [Contributing](./CONTRIBUTING.md) policy before making a contribution.
 
 ## Future Plans
 
-iloader is currently being overhauled, see the [trello board](https://trello.com/b/hAe1LHTj/iloader) for more info!
+Разработка ipaload продолжается. Предложения и исправления можно будет отправить в репозиторий проекта после его публикации.

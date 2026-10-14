@@ -74,11 +74,15 @@ export const Settings = ({
     return log.level >= Number(logLevelFilter);
   });
 
-  const [lang, setLang] = useStore<string>("lang", "en");
+  const [lang, setLang] = useStore<string>("lang", "ru");
 
   useEffect(() => {
+    if (lang !== "ru" && lang !== "en") {
+      setLang("ru");
+      return;
+    }
     i18n.changeLanguage(lang);
-  }, [lang]);
+  }, [lang, setLang]);
 
   useEffect(() => {
     const handler = (event: KeyboardEvent) => {

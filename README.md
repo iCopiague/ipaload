@@ -114,42 +114,6 @@ ipaload — неофициальный форк [iLoader](https://github.com/nab
 - [idevice_pair](https://github.com/jkcoxson/idevice_pair) was used as a reference for pairing file management
 - App made with [tauri](https://tauri.app)
 
-## Авторы переводов
-
-Спасибо всем, кто помогает с переводами! Как предложить новый перевод — описано в разделе «Добавление переводов».
-
-- [By3lish](https://github.com/by3lish): Azerbaijani (az)
-- [TNT-333](https://github.com/TNT-333): German (de)
-- [basketshoe](https://github.com/basketshoe): Italian (it)
-- [baocreata](https://github.com/baocreata): Vietnamese (vt)
-- [IamArayel](https://github.com/IamArayel): French (fr)
-- [kkula9999](https://github.com/kkula9999): Traditional & Simplified Chinese (zh_tw & zh_cn)
-- [sibwaze](https://github.com/sibwaze): Russian (ru)
-- [notmalicik](https://github.com/notmalicik): Română (ro)
-- [mirdukkkkk](https://github.com/mirdukkkkk): Improved Russian (ru)
-- [okinaau](https://github.com/okinaau): Arabic (ar)
-- [ChouChiu](https://github.com/ChouChiu): Cantonese (zh_hk) & Improved Chinese (zh_tw & zh_cn)
-- [marcinmajsc](https://github.com/marcinmajsc): Polish (pl)
-- [ern775](https://github.com/ern775): Turkish (tr)
-- [canpng](https://github.com/canpng): Improved Turkish (tr)
-- [jazoppix](https://github.com/jazoppix): Spanish (es)
-- [eseiker](https://github.com/eseiker): Korean (ko)
-- [seomin0610](https://github.com/seomin0610): Improved Korean (ko)
-- [Ordyan777](https://github.com/Ordyan777): Armenian (am)
-- [kakik0u](https://github.com/kakik0u): Japanese (ja)
-- [lkspodmol](https://github.com/lkspodmol): Czech (cs_cz)
-- [marcusherelammonstyle-cmd](https://github.com/marcusherelammonstyle-cmd): Swedish (sv)
-- [MCI49312](https://github.com/MCI49312): Hungarian (hu)
-- [Kynonim](https://github.com/Kynonim): Indonesian (id)
-- [DD00031](https://github.com/DD00031): Dutch (nl)
-- [Toritan123](https://github.com/Toritan123): Improved Japanese (ja)
-- [marcinmajsc](https://github.com/marcinmajsc): Improved Polish (pl)
-- [dleiferives](https://github.com/dleiferives): Greek (el)
-- [ShadowWLX](https://github.com/ShadowWLX): Improved French (fr)
-- [fkpcomposer](https://github.com/fkpcomposer): Brazilian Portuguese (pt_br)
-- [474FrediFred](https://github.com/474FrediFred): Swiss German (de_ch)
-- [bovae](https://github.com/bovae) & [b1twalker](https://github.com/b1twalker): Ukranian (uk)
-
 ## License
 
 Copyright (C) 2026 nab138
